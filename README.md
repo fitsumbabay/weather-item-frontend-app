@@ -30,9 +30,9 @@ An application that displays the current weather for any given city and allows u
 
 ## Live Site
 Check out the live version of the application for front-end:
-  https://my-mern-backend-2ozr.onrender.com/
+  
 Check out the live version of the application for back-end:
-
+https://my-mern-backend-2ozr.onrender.com
 
 
 Backend Setup
