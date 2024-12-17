@@ -29,7 +29,11 @@ An application that displays the current weather for any given city and allows u
 *MongoDB* (local or cloud instance)
 
 ## Live Site
-Check out the live version of the application at:
+Check out the live version of the application for front-end:
+  https://my-mern-backend-2ozr.onrender.com/
+Check out the live version of the application for back-end:
+
+
 
 Backend Setup
 1.Clone the repository:
@@ -47,13 +51,15 @@ cd my-mern-backend
   The backend server should now be running on http://localhost:5000.
 
    Frontend Setup
-1.Navigate to the frontend directory:
+1.Clone the repository:
+   git clone https://github.com/fitsumbabay/weather-item-frontend-app.git
+2.Navigate to the frontend directory:
   cd ../weather-item-frontend-app/
-2.Install dependencies:
+3.Install dependencies:
   npm install
-3.Set up environment variables:
+4.Set up environment variables:
   VITE_OPENWEATHER_API_KEY=your_openweathermap_api_key
-4.Start the frontend development server:
+5.Start the frontend development server:
   npm run dev
   The frontend server should now be running on http://localhost:5173.
 
