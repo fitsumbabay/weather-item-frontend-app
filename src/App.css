@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2024/02/26/20/48/landscape-8598886_1280.jpg');
+    background-size: cover;
+    background-position: center;
+     display: flex;
+     justify-content: center;
+      align-items: center;
+    background-color: #f0f4f8;
+      height: 100vh;
+      /* color: #fff; */
+}
+
+/* Main container styles */
+.container {
+    max-width: 800px;
+    padding: 20px;
+   background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s;
+}
+
+
+/* Weather styles */
+.weather-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #e9ecef;
+}
+
+.weather-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    input {
+        width: 60%; /* Width of input fields on small screens */
+    }
+
+    button {
+        width: 30%; /* Width of buttons on small screens */
+    }
+
+    .container {
+        width: 90%; /* Full-width for the main container on small screens */
+    }
+}
+
+
+
