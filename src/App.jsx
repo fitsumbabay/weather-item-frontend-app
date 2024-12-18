@@ -9,7 +9,7 @@ const App = () => {
     <Router>
       <div className="container">
         <header>
-          <h1>Weather Item App</h1>
+          {/* <h1>Weather Item App</h1> */}
           <nav>
             <Link to="/">Home</Link>
             <Link to="/weather">Weather</Link>
