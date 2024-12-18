@@ -61,7 +61,7 @@ cd my-mern-backend
   VITE_OPENWEATHER_API_KEY=your_openweathermap_api_key
 5.Start the frontend development server:
   npm run dev
-  The frontend server should now be running on http://localhost:5173.
+  The frontend server should now be running on http://localhost:5173
 
 
     Frontend Functionality
