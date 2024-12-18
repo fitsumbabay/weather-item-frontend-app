@@ -17,7 +17,7 @@ const App = () => {
           </nav>
         </header>
         <Routes>
-          <Route path="/" element={<h2>Welcome to the Weather Item App</h2>} />
+          <Route path="/" element={<h2>Welcome to the Weather and Item App</h2>} />
           <Route path="/weather" element={<Weather />} />
           <Route path="/items" element={<ItemManager />} />
         </Routes>
