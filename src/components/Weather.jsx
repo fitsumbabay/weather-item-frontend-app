@@ -12,7 +12,7 @@ const Weather = () => {
     setError("");
     try {
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather`,
+        `https://my-mern-backend-wiel.onrender.com`,
         {
           params: {
             q: city,

@@ -13,7 +13,9 @@ const ItemManager = () => {
 
   const fetchItems = async () => {
     try {
-      const response = await axios.get("/api/items");
+      const response = await axios.get(
+        "https://my-mern-backend-wiel.onrender.com/api/items"
+      );
       const itemsWithId = response.data.map((item) => ({
         id: item._id,
         name: item.name,
@@ -39,11 +41,14 @@ const ItemManager = () => {
     if (editingItemId) {
       // Update existing item
       try {
-        await axios.put(`/api/items/${editingItemId}`, {
-          name,
-          description,
-          price: Number(price),
-        });
+        await axios.put(
+          `https://my-mern-backend-wiel.onrender.com/api/items/${editingItemId}`,
+          {
+            name,
+            description,
+            price: Number(price),
+          }
+        );
         setItems(items.map(item => item.id === editingItemId ? { ...item, name, description, price: Number(price) } : item));
         setEditingItemId(null);
       } catch (err) {
@@ -59,11 +64,14 @@ const ItemManager = () => {
       };
       setItems([...items, tempItem]);
       try {
-        const response = await axios.post("/api/items", {
-          name,
-          description,
-          price: Number(price),
-        });
+        const response = await axios.post(
+          "https://my-mern-backend-wiel.onrender.com/api/items",
+          {
+            name,
+            description,
+            price: Number(price),
+          }
+        );
         setItems([
           ...items,
           { id: response.data._id, name, description, price: Number(price) },
@@ -86,7 +94,9 @@ const ItemManager = () => {
 
     setLoading(true);
     try {
-      await axios.delete(`/api/items/${id}`);
+      await axios.delete(
+        `https://my-mern-backend-wiel.onrender.com/api/items/${id}`
+      );
       setItems(items.filter(item => item.id !== id));
     } catch (err) {
       setError(err.message || "Failed to delete item");
