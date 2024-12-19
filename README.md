@@ -32,8 +32,7 @@ An application that displays the current weather for any given city and allows u
 Check out the live version of the application for front-end:
   https://weather-item-frontend-app.onrender.com/
 Check out the live version of the application for back-end:
-https://my-mern-backend-2ozr.onrender.com
-
+https://my-mern-backend-wiel.onrender.com/
 
 Backend Setup
 1.Clone the repository:
