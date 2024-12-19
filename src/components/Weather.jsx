@@ -12,7 +12,7 @@ const Weather = () => {
     setError("");
     try {
       const response = await axios.get(
-        `https://my-mern-backend-wiel.onrender.com//api/weather/${city}`,
+        `https://my-mern-backend-wiel.onrender.com/api/weather/${city}`,
         {
           params: {
             q: city,
