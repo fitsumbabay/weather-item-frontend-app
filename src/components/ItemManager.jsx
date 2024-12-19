@@ -64,7 +64,11 @@ const ItemManager = () => {
           description,
           price: Number(price),
         });
-        setItems(items.map(item => item.id === tempItem.id ? { ...item, id: response.data._id } : item));
+        setItems([
+          ...items,
+          { id: response.data._id, name, description, price: Number(price) },
+        ]);
+
       } catch (err) {
         setError(err.message || "Failed to add item");
         setItems((items) => items.filter((item) => item.id !== tempItem.id));
